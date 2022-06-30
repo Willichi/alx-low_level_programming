@@ -1,1 +1,1 @@
-my Readme directory on alx-low_level_programming
+This is my first Readme on alx-low_level_programming
