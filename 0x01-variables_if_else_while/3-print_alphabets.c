@@ -1,21 +1,22 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
 /**
-*main-Entrypoint
-*
-*Return:Always0(Success)
-*/
-intmain(void)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-intd;
-charlow;
+	char alpha;
+	char bet;
 
-for(d='0';d<='9';d++)
-putchar(d);
-for(low='a';low<='f';low++)
-putchar(low);
-putchar('\n');
-
-return(0);
+	for (alpha = 'a' ; alpha <= 'z' ; alpha++)
+	{
+		putchar(alpha);
+	}
+	for (bet = 'A' ; bet <= 'Z' ; bet++)
+	{
+		putchar(bet);
+	}
+	putchar('\n');
+	return (0);
 }
