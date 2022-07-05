@@ -10,8 +10,7 @@ int main(void)
 	m = 0;
 while (m <= 8)
 	{
-		_putchar('m',
-		m++;
+		_putchar('m');	
 	}
 	_putchar('\n');
 	return (0);
