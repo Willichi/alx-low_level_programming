@@ -10,7 +10,7 @@ int main(void)
 	m = 0;
 while (m <= 8)
 	{
-		_putchar(h[m]);
+		_putchar('m',
 		m++;
 	}
 	_putchar('\n');
