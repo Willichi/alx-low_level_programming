@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+	char m[] = "main";
 	int k;
 
 	k = 0;
