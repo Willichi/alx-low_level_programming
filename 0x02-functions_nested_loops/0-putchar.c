@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-      while (*sh)
+Int a;
     {
-   _putchar(*sh);sh++;
+ _putchar("a <= 5")
     }
     _putchar('\n');
 
