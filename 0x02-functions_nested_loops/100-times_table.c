@@ -11,12 +11,12 @@ int a;
 a = 15;
 {
 for (a = 0; a <= 15;)
-print_times_table(2);
+{
+ _putchar(2);
 _putchar('\n');
-print_times_table(14);
+_putchar('25');
 _putchar('\n');
-print _times_table (25);
-   
+}
 } 
 return (0);
 }
