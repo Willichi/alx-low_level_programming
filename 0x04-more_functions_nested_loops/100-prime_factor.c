@@ -1,13 +1,12 @@
-#include <stdio.h> 
- 
+#include <stdio.h>
+
 /**
- * 
- * 
- * 
- */
-int main (void) 
+* main - prints prime factors of 612852475143
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
 {
-    
 long long int number=612852475143, large_factor=0, i=2; 
 while (number!=1)
 { 
