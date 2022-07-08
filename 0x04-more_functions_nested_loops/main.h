@@ -17,3 +17,6 @@ long int biggestFactor(long int a);
 int isPrime(long int n);
 int numDigits(int n);
 #endif
+void print_line(int n)
+void print_line(int n);e(d 
+void print_line(int n);
