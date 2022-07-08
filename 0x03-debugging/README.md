@@ -1,1 +1,1 @@
-C program on debugging 
+my first readme on C debugging 
