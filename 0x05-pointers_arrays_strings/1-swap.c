@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
 * swap_int - check the code for Main files 
-* @a: variable.
-* @b: variable
+* @a:
+* @b: 
 */
 
 void swap_int(int *a, int *b)
