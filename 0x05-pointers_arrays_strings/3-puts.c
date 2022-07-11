@@ -1,21 +1,16 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * print_rev - check the code for Holberton School students.
- * @s: variable.
+ * _puts - check the code for Main.
+ * @str: variable.
  */
-void print_rev(char *s)
+void _puts(char *str)
 {
 int i;
-int a;
-for (i = 0; s[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-continue;
-}
-i--;
-for (a = 0; a <= i; i--)
-{
-_putchar(s[i]);
+_putchar(str[i]);
 }
 _putchar('\n');
 }
