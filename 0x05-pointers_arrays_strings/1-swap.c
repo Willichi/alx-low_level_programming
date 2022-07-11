@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* swap_int - check the code for Main files 
+* swap_int - check the code for Main.
 * @a: variable.
-* @b: variable
+* @b: variable.
 */
-void swap_int(int *a, int *b)
 
+void swap_int(int *a, int *b)
 {
 int temp;
 temp = *b;
