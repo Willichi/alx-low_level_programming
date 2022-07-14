@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * infinite_add - add 2 integers.
  * @n1: integer
@@ -54,11 +53,11 @@ str[i] = ('0' + n);
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    int sum, a, b;
-    a = _atoi(n1);
-    b = _atoi(n2);
+int sum, a, b;
+a = _atoi(n1);
+b = _atoi(n2);
 
-    sum = a + b;
+sum = a + b;
 
 
 }
