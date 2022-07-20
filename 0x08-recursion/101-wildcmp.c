@@ -2,7 +2,7 @@
 
 /*
 * File: 100-wildcmp.c
-* 
+* special cahr.
 */
 
 int strlen_no_wilds(char *str);
