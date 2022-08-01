@@ -1,53 +1,75 @@
+
+#include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "dog.h"
-int get_len(int i);
-char *str_cpy(char *dest, char *src);
+
+
 /**
- * new_dog - a function that creates a new dog
- * get len of name + owner, malloc them, cpy name + owner to new
- * @name: name
- * @age: age
- * @owner: owner
+ * *_strdup - return a pointer to a newly allocated space in memory
+ * which contains a copy of the string given as a parameter.
+ * @str: string
  * Return: 0
  */
+
+char *_strdup(char *str)
+{
+int i = 0, size = 0;
+char *m;
+
+if (str == NULL)
+	return (NULL);
+
+for (; str[size] != '\0'; size++)
+;
+
+m = malloc(size * sizeof(*str) + 1);
+
+if (m == 0)
+	return (NULL);
+else
+{
+	for (; i < size; i++)
+		m[i] = str[i];
+}
+return (m);
+}
+
+
+/**
+ * *new_dog - create a new dog
+ * @name: string for name
+ * @age: integer for age
+ * @owner: string for owners
+ * Return: a dog or NULL
+ */
+
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_name;
-	char *copy_name, *copy_owner;
-	unsigned int x, name_len = 0, owner_len = 0;
+struct dog *mydog;
+mydog = malloc(sizeof(struct dog));
 
-	new_name = malloc(sizeof(dog_t));
-	if (name == NULL)
-		return (NULL);
-	if (name == NULL || age <= 0 || owner == NULL)
-	{
-		free(new_name);
-		return (NULL);
-	}
+if (mydog == NULL)
+	return (NULL);
 
-	for (x = 0; name[x] != '\0'; x++)
-		name_len++;
+mydog->name = _strdup(name);
 
-	for (x = 0; owner[x] != '\0'; x++)
-		owner_len++;
+if (mydog->name == NULL)
+{
+	free(mydog);
+	return (NULL);
+}
 
-	copy_name = malloc(sizeof(char) * (name_len + 1));
-	if (copy_name == NULL)
-		return (NULL);
+mydog->owner = _strdup(owner);
 
-	copy_owner = malloc(sizeof(char) * (owner_len + 1));
-	if (copy_owner == NULL)
-		return (NULL);
+if (mydog->owner == NULL)
+{
+	free(mydog->name);
+	free(mydog);
+	return (NULL);
+}
 
-	for (x = 0; x <= name_len; x++)
-		copy_name[x] = name[x];
+mydog->age = age;
 
-	for (x = 0; x <= owner_len; x++)
-		copy_owner[x] = owner[x];
-
-	new_name->name = copy_name;
-	new_name->owner = copy_owner;
-	new_name->age = age;
-	return (new_name);
+return (mydog);
 }
