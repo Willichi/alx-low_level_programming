@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - Entry Point
+ * print_binary - Entry Point.
  * @n: dec input
  * Return: 0
  */
