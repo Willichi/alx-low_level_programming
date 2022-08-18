@@ -1,16 +1,19 @@
-#include "main.h"
+#include "main.h" 
 
-/**
- * get_endianness - Entry Point
- * Return: 0
- */
-int get_endianness(void)
-{
-	unsigned int i;
-
-	i = 1;
-	if (*(char *)&i == 1)
-		return (1);
-	else
-		return (0);
-}
+/*  * File: 100-get_endianness.c 
+  * 
+  *  * get_endianness - Checks the endianness. 
+  * 
+  * Return: If big-endian - 0. 
+  *         If little-endian - 1. 
+  */ 
+ int get_endianness(void) 
+ { 
+         int num = 1; 
+         char *endian = (char *)&num; 
+  
+         if (*endian == 1) 
+                 return (1); 
+  
+         return (0); 
+ }
